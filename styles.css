@@ -256,10 +256,13 @@
     flex: 1;
     color: white;
     margin-right: 20px; /* Added margin to move text left */
+<<<<<<< HEAD
     background: #202020; /* Match the background color */
     padding: 20px; /* Add padding */
     border-radius: 10px; /* Round the corners */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
+=======
+>>>>>>> 08884e4 (First commit)
 }
 
 .main__content h1 {
@@ -324,6 +327,10 @@
 }
 
 /* Education */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08884e4 (First commit)
 .edu {
     background: black;
     background: linear-gradient(to right, #161616, #000000);
@@ -332,6 +339,7 @@
 
 .edu__container {
     display: flex;
+<<<<<<< HEAD
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
@@ -339,10 +347,19 @@
     width: 100%;
     max-width: 1200px; /* Set a max-width for better readability */
     padding: 20px;
+=======
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px; /* Set a max-width for better readability */
+    text-align: center; /* Center-align all text */
+>>>>>>> 08884e4 (First commit)
 }
 
 .edu__content {
     flex: 1;
+<<<<<<< HEAD
     min-width: 45%; /* Ensure each education section takes up approximately half the width */
     margin: 20px; /* Add margin between the two education sections */
     color: white;
@@ -350,6 +367,22 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+=======
+    color: white;
+}
+
+.edu__content h1 {
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 60px;
+    margin-bottom: 20px;
+>>>>>>> 08884e4 (First commit)
 }
 
 .edu__content h3 {
@@ -362,22 +395,38 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-size: 30px;
+<<<<<<< HEAD
     margin-bottom: 15px;
+=======
+    margin-bottom: 20px;
+>>>>>>> 08884e4 (First commit)
 }
 
 .edu__content p {
     color: white;
+<<<<<<< HEAD
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: justify;
+=======
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+>>>>>>> 08884e4 (First commit)
 }
 
 .edu__img {
     width: 100%;
+<<<<<<< HEAD
     max-width: 45%; /* Keep the image width within the content block */
     height: auto;
     margin-bottom: 15px;
+=======
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+>>>>>>> 08884e4 (First commit)
     border-radius: 10px;
     object-fit: cover;
     display: block;
@@ -385,6 +434,7 @@
     margin-right: auto; /* Center the image */
 }
 
+<<<<<<< HEAD
 /* Responsive Design for Education Section */
 @media screen and (max-width: 768px) {
     .edu__container {
@@ -397,6 +447,8 @@
         margin: 10px 0; /* Reduce margin on small screens */
     }
 }
+=======
+>>>>>>> 08884e4 (First commit)
 /* Experince */
 
 .exp {
@@ -407,6 +459,7 @@
 
 .exp__container {
     display: flex;
+<<<<<<< HEAD
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
@@ -414,10 +467,19 @@
     width: 100%;
     max-width: 1200px; /* Set a max-width for better readability */
     padding: 20px;
+=======
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px; /* Set a max-width for better readability */
+    text-align: center; /* Center-align all text */
+>>>>>>> 08884e4 (First commit)
 }
 
 .exp__content {
     flex: 1;
+<<<<<<< HEAD
     min-width: 45%; /* Ensure each experience takes up approximately half the width */
     margin: 20px; /* Add margin between the two experience sections */
     color: white;
@@ -428,6 +490,12 @@
 }
 
 .exp__content h3 {
+=======
+    color: white;
+}
+
+.exp__content h1 {
+>>>>>>> 08884e4 (First commit)
     background: #ee0979;
     background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
     background: linear-gradient(to right, #ff6a00, #ee0979);
@@ -436,23 +504,40 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+<<<<<<< HEAD
     font-size: 30px;
     margin-bottom: 15px;
+=======
+    font-size: 60px;
+    margin-bottom: 20px;
+>>>>>>> 08884e4 (First commit)
 }
 
 .exp__content p {
     color: white;
+<<<<<<< HEAD
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: justify;
+=======
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+>>>>>>> 08884e4 (First commit)
 }
 
 .exp__img {
     width: 100%;
+<<<<<<< HEAD
     max-width: 50%; /* Keep the image width within the content block */
     height: auto;
     margin-bottom: 15px;
+=======
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+>>>>>>> 08884e4 (First commit)
     border-radius: 10px;
     object-fit: cover;
     display: block;
@@ -460,6 +545,7 @@
     margin-right: auto; /* Center the image */
 }
 
+<<<<<<< HEAD
 /* Responsive Design for Experience Section */
 @media screen and (max-width: 768px) {
     .exp__container {
@@ -473,6 +559,8 @@
     }
 }
 
+=======
+>>>>>>> 08884e4 (First commit)
 /* Footer Styles */
 .footer {
     background: black;
