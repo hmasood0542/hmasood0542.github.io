@@ -1,0 +1,521 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* nav bar style */
+.navbar{
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 0 0 0;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    background: #ee0979;  
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.navbar__item{
+    height: 80px;
+    
+}
+
+.navbar__links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: dashed;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    width: 100%;
+}
+
+
+.navbar__links:hover{
+    color: #8657dd;
+    transition: all 0.3s ease;
+
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0; 
+    }
+
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .navbar__menu.active{
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 25px;
+    }
+
+    #navbar__logo{
+        padding-left: 25px;
+    }
+    
+    .navbar__toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: white;
+    }
+
+    .navbar__item{
+        width: 100%;
+    }
+
+    .navbar__links{
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        display: table;
+    }
+
+    .navbar__btn{
+        padding-bottom: 32px;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* welcome page style */
+.welcome{
+    background: black;
+    
+    padding: 200px 0;
+} 
+
+.welcome__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome__heading{
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: #FFF;
+}
+
+.welcome__heading span{
+    background: #ee0979;  
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.welcome__description {
+    font-size: 60px;
+    background: #ee0979;  
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.highlight {
+    border-bottom: 4px solid rgb(132, 0, 255);
+}
+
+@media screen and (max-width: 760px) {
+    .welcome__heading{
+        font-size: 60px;
+    }
+
+    .welcome__description{
+        font-size: 40px;
+    }
+}
+
+.main__btn{
+    font-size: 1.8rem;
+    background: #ee0979;  
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    padding:20px 60px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+/* About Page */
+.main {
+    background: black;
+    background: linear-gradient(to right, #161616, #000000);
+    padding: 255px 0;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    gap: 30px; /* Reduced gap to move text closer to the image */
+}
+
+.main__content {
+    flex: 1;
+    color: white;
+    margin-right: 20px; /* Added margin to move text left */
+    background: #202020; /* Match the background color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+.main__content h1 {
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.main__content p {
+    color: white;
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.main__img--container {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main__container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .main__content {
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+
+    .main__content h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .main__content p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .main__img--container {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+/* Education */
+.edu {
+    background: black;
+    background: linear-gradient(to right, #161616, #000000);
+    padding: 255px 0;
+}
+
+.edu__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px; /* Set a max-width for better readability */
+    padding: 20px;
+}
+
+.edu__content {
+    flex: 1;
+    min-width: 45%; /* Ensure each education section takes up approximately half the width */
+    margin: 20px; /* Add margin between the two education sections */
+    color: white;
+    background: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.edu__content h3 {
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.edu__content p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.edu__img {
+    width: 100%;
+    max-width: 45%; /* Keep the image width within the content block */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+
+/* Responsive Design for Education Section */
+@media screen and (max-width: 768px) {
+    .edu__container {
+        flex-direction: column; /* Stack content vertically on small screens */
+        align-items: center;
+    }
+
+    .edu__content {
+        min-width: 100%; /* Take full width on small screens */
+        margin: 10px 0; /* Reduce margin on small screens */
+    }
+}
+/* Experince */
+
+.exp {
+    background: black;
+    background: linear-gradient(to right, #161616, #000000);
+    padding: 255px 0;
+}
+
+.exp__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px; /* Set a max-width for better readability */
+    padding: 20px;
+}
+
+.exp__content {
+    flex: 1;
+    min-width: 45%; /* Ensure each experience takes up approximately half the width */
+    margin: 20px; /* Add margin between the two experience sections */
+    color: white;
+    background: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.exp__content h3 {
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.exp__content p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.exp__img {
+    width: 100%;
+    max-width: 50%; /* Keep the image width within the content block */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+
+/* Responsive Design for Experience Section */
+@media screen and (max-width: 768px) {
+    .exp__container {
+        flex-direction: column; /* Stack content vertically on small screens */
+        align-items: center;
+    }
+
+    .exp__content {
+        min-width: 100%; /* Take full width on small screens */
+        margin: 10px 0; /* Reduce margin on small screens */
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background: black;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border-top: 1px solid #444;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__content p {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+
+.footer__content a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__content a:hover {
+    color: #ee0979;
+}
+
+.footer__links {
+    margin-top: 20px;
+}
+
+.footer__link {
+    color: #ee0979;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #ee0979;
+}
