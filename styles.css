@@ -256,10 +256,6 @@
     flex: 1;
     color: white;
     margin-right: 20px; /* Added margin to move text left */
-    background: #202020; /* Match the background color */
-    padding: 20px; /* Add padding */
-    border-radius: 10px; /* Round the corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
 }
 
 .main__content h1 {
@@ -324,6 +320,7 @@
 }
 
 /* Education */
+
 .edu {
     background: black;
     background: linear-gradient(to right, #161616, #000000);
@@ -332,24 +329,30 @@
 
 .edu__container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px; /* Set a max-width for better readability */
-    padding: 20px;
+    max-width: 800px; /* Set a max-width for better readability */
+    text-align: center; /* Center-align all text */
 }
 
 .edu__content {
     flex: 1;
-    min-width: 45%; /* Ensure each education section takes up approximately half the width */
-    margin: 20px; /* Add margin between the two education sections */
     color: white;
-    background: #202020;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.edu__content h1 {
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
 .edu__content h3 {
@@ -362,22 +365,21 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .edu__content p {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: justify;
+    margin-bottom: 16px;
 }
 
 .edu__img {
     width: 100%;
-    max-width: 45%; /* Keep the image width within the content block */
+    max-width: 400px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 10px;
     object-fit: cover;
     display: block;
@@ -385,18 +387,6 @@
     margin-right: auto; /* Center the image */
 }
 
-/* Responsive Design for Education Section */
-@media screen and (max-width: 768px) {
-    .edu__container {
-        flex-direction: column; /* Stack content vertically on small screens */
-        align-items: center;
-    }
-
-    .edu__content {
-        min-width: 100%; /* Take full width on small screens */
-        margin: 10px 0; /* Reduce margin on small screens */
-    }
-}
 /* Experince */
 
 .exp {
@@ -407,19 +397,16 @@
 
 .exp__container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px; /* Set a max-width for better readability */
-    padding: 20px;
+    max-width: 800px; /* Set a max-width for better readability */
+    text-align: center; /* Center-align all text */
 }
 
 .exp__content {
     flex: 1;
-    min-width: 45%; /* Ensure each experience takes up approximately half the width */
-    margin: 20px; /* Add margin between the two experience sections */
     color: white;
     background: #202020;
     padding: 20px;
@@ -427,7 +414,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.exp__content h3 {
+.exp__content h1 {
     background: #ee0979;
     background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
     background: linear-gradient(to right, #ff6a00, #ee0979);
@@ -436,28 +423,40 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
 .exp__content p {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: justify;
+    margin-bottom: 16px;
 }
 
 .exp__img {
     width: 100%;
-    max-width: 50%; /* Keep the image width within the content block */
+    max-width: 400px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 10px;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto; /* Center the image */
+}
+
+/* Responsive Design for Experience Section */
+@media screen and (max-width: 768px) {
+    .exp__container {
+        flex-direction: column; /* Stack content vertically on small screens */
+        align-items: center;
+    }
+
+    .exp__content {
+        min-width: 100%; /* Take full width on small screens */
+        margin: 10px 0; /* Reduce margin on small screens */
+    }
 }
 
 /* Responsive Design for Experience Section */
