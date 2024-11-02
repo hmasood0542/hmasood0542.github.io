@@ -459,7 +459,6 @@
     }
 }
 
-<<<<<<< HEAD
 /* Responsive Design for Experience Section */
 @media screen and (max-width: 768px) {
     .exp__container {
@@ -473,8 +472,6 @@
     }
 }
 
-=======
->>>>>>> 08884e4 (First commit)
 /* Footer Styles */
 .footer {
     background: black;
